@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tutorial"
+version = "0.1.0"
+description = ""
+authors = ["Christos Karanikolopoulos <chkaranikolopoulos@cs.uoi.gr>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+ipykernel = "^6.29.5"
+ipywidgets = "^8.1.5"
+torch = "^2.5.1"
+transformers = "^4.46.3"
+huggingface-hub = {extras = ["cli"], version = "^0.26.3"}
+lm-eval = {extras = ["vllm"], version = "^0.4.5"}
+bitsandbytes = "^0.44.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
